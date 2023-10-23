@@ -1,0 +1,21 @@
+$container-color: #373743;
+$grey-text: #ffffffad;
+$light-grey-text: #ffffff67;
+$dark-grey: #383939;
+
+.container-style {
+    background-color: #373743;
+    border: 1px solid #323030;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #00000033, -2px -2px 5px #3f3f3f80;
+}
+
+.title-style {
+    color: #ffffffad;
+    font-size: 35px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px 15px 30px;
+}
