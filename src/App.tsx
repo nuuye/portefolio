@@ -21,6 +21,9 @@ import projexPicture from '../src/images/projex.jpg';
 import nodejsPicture from '../src/images/nodejs.png';
 import postmanPicture from '../src/images/postman.png';
 import postgrePicture from '../src/images/postgre.png';
+import projexMobile from '../src/images/projexMobile.png';
+import dominionMobile from '../src/images/dominionMobile.png';
+import obisMobile from '../src/images/obisMobile.gif';
 
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -144,7 +147,7 @@ function App() {
                             <span>22 years old</span>
                         </div>
                         <div className="contactContainer">
-                            <div className='temporaryDiv'>
+                            <div className="temporaryDiv">
                                 <div>
                                     <div className="infoContainer">
                                         <IconContainer background="#373743">
@@ -519,12 +522,22 @@ function App() {
                         </div>
                         <div className="secondProjectContainer">
                             <img src={dominion} alt="Dominion_Project" />
+                            <img
+                                src={dominionMobile}
+                                alt="DominionMobilePicture"
+                                className="dominionMobile"
+                            />
                         </div>
                     </div>
                     <div className="diviser"></div>
                     <div className="thirdProject">
                         <div className="thirdProjectContainer">
                             <img src={obisGIF} alt="obisProjectGIF" />
+                            <img
+                                src={obisMobile}
+                                alt="obisProjectGIFMobile"
+                                className="obisMobile"
+                            />
                         </div>
                         <div className="thirdProjectSecondContainer">
                             <div className="thirdProjectTextContainer">
@@ -657,11 +670,7 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={cppPicture}
-                                        alt="cpp logo"
-                                        style={{ width: 65, height: 'auto' }}
-                                    />
+                                    <img src={cppPicture} alt="cpp logo" />
                                     <span>C++</span>
                                 </a>
 
@@ -673,7 +682,7 @@ function App() {
                                     <img
                                         src={javaPicture}
                                         alt="java logo"
-                                        style={{ width: 50, height: 'auto' }}
+                                        className="javaLogo"
                                     />
                                     <span>Java</span>
                                 </a>
@@ -686,7 +695,6 @@ function App() {
                                     <img
                                         src={pythonPicture}
                                         alt="python logo"
-                                        style={{ width: 65, height: 'auto' }}
                                     />
                                     <span>Python</span>
                                 </a>
@@ -696,11 +704,7 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={cmakePicture}
-                                        alt="cmake logo"
-                                        style={{ width: 65, height: 'auto' }}
-                                    />
+                                    <img src={cmakePicture} alt="cmake logo" />
                                     <span>CMake</span>
                                 </a>
                             </div>
@@ -717,11 +721,7 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={htmlPicture}
-                                        alt="html logo"
-                                        style={{ width: 65, height: 'auto' }}
-                                    />
+                                    <img src={htmlPicture} alt="html logo" />
                                     <span>HTML</span>
                                 </a>
 
@@ -733,7 +733,7 @@ function App() {
                                     <img
                                         src={cssPicture}
                                         alt="css logo"
-                                        style={{ width: 60, height: 'auto' }}
+                                        className="cssLogo"
                                     />
                                     <span>CSS</span>
                                 </a>
@@ -743,11 +743,7 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={jsPicture}
-                                        alt="js logo"
-                                        style={{ width: 65, height: 'auto' }}
-                                    />
+                                    <img src={jsPicture} alt="js logo" />
                                     <span>JavaScript</span>
                                 </a>
 
@@ -756,11 +752,7 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={tsPicture}
-                                        alt="ts logo"
-                                        style={{ width: 65, height: 'auto' }}
-                                    />
+                                    <img src={tsPicture} alt="ts logo" />
                                     <span>TypeScript</span>
                                 </a>
 
@@ -770,11 +762,7 @@ function App() {
                                     rel="noreferrer"
                                     style={{ height: '65px' }}
                                 >
-                                    <img
-                                        src={reactPicture}
-                                        alt="react logo"
-                                        style={{ width: 65, height: 'auto' }}
-                                    />
+                                    <img src={reactPicture} alt="react logo" />
                                     <span>React</span>
                                 </a>
 
@@ -783,11 +771,7 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={antPicture}
-                                        alt="ant logo"
-                                        style={{ width: 65, height: 'auto' }}
-                                    />
+                                    <img src={antPicture} alt="ant logo" />
                                     <span>Ant Design</span>
                                 </a>
 
@@ -799,7 +783,6 @@ function App() {
                                     <img
                                         src={materialPicture}
                                         alt="materialUI logo"
-                                        style={{ width: 65, height: 'auto' }}
                                     />
                                     <span>Material UI</span>
                                 </a>
@@ -820,7 +803,7 @@ function App() {
                                     <img
                                         src={postgrePicture}
                                         alt="postgre logo"
-                                        style={{ width: 63, height: 'auto' }}
+                                        className="postgreLogo"
                                     />
                                     <span>PostgreSQL</span>
                                 </a>
@@ -832,7 +815,6 @@ function App() {
                                     <img
                                         src={postmanPicture}
                                         alt="postman logo"
-                                        style={{ width: 65, height: 'auto' }}
                                     />
                                     <span>Postman</span>
                                 </a>
@@ -844,7 +826,6 @@ function App() {
                                     <img
                                         src={nodejsPicture}
                                         alt="nodejs logo"
-                                        style={{ width: 65, height: 'auto' }}
                                     />
                                     <span>NodeJS</span>
                                 </a>
@@ -858,6 +839,11 @@ function App() {
                         <div className="textImageContainer">
                             <div className="firstExperienceContainer">
                                 <img src={projexPicture} alt="ProjexPicture" />
+                                <img
+                                    src={projexMobile}
+                                    alt="ProjexMobilePicture"
+                                    className="projexMobile"
+                                />
                             </div>
                             <div className="companyTitle">
                                 <span className="companyTitle">

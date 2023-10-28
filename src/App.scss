@@ -29,6 +29,9 @@ header {
     @media (max-width: 555px) {
         padding-right: 25px;
     }
+    @media (max-width: 400px) {
+        padding-right: 15px;
+    }
     * {
         position: relative;
     }
@@ -48,6 +51,9 @@ header {
         background-color: unset;
         border: unset;
         cursor: pointer;
+        @media (max-width: 450px) {
+            display: none;
+        }
     }
 }
 
@@ -77,6 +83,10 @@ body {
         @media (max-width: 650px) {
             margin-left: 25px;
             margin-right: 25px;
+        }
+        @media (max-width: 435px) {
+            margin-left: 15px;
+            margin-right: 15px;
         }
 
         .leftContainer {
@@ -200,6 +210,10 @@ body {
             margin-left: 25px;
             margin-right: 25px;
         }
+        @media (max-width: 435px) {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
         span {
             @extend .title-style;
         }
@@ -226,6 +240,34 @@ body {
                         width: 400px;
                     }
                 }
+                .obisMobile {
+                    border-radius: 6px;
+                    @media (min-width: 730px) {
+                        display: none;
+                    }
+                    @media (max-width: 730px) {
+                        display: unset;
+                        height: 485px;
+                        width: auto;
+                    }
+                    @media (max-width: 665px) {
+                        height: 435px;
+                    }
+                    @media (max-width: 565px) {
+                        height: 380px;
+                    }
+
+                    @media (max-width: 500px) {
+                        height: 330px;
+                    }
+                    @media (max-width: 385px) {
+                        height: 290px;
+                    }
+                    @media (max-width: 345px) {
+                        height: 250px;
+                    }
+                }
+
                 .calculatorIMG {
                     width: 250px;
                     height: auto;
@@ -285,6 +327,26 @@ body {
                     @media (max-width: 535px) {
                         width: 400px;
                     }
+                    @media (max-width: 600px) {
+                        display: none;
+                    }
+                }
+                .dominionMobile {
+                    border-radius: 6px;
+                    @media (min-width: 600px) {
+                        display: none;
+                    }
+                    @media (max-width: 600px) {
+                        display: unset;
+                        height: 700px;
+                        width: auto;
+                    }
+                    @media (max-width: 500px) {
+                        height: 550px;
+                    }
+                    @media (max-width: 400px) {
+                        height: 470px;
+                    }
                 }
             }
             .secondProjectSecondContainer {
@@ -339,6 +401,19 @@ body {
                 gap: 20px;
                 align-items: center;
             }
+            @media (max-width: 530px) {
+                padding: 25px;
+            }
+            @media (max-width: 435px) {
+                padding: 15px;
+            }
+            .thirdProjectContainer {
+                img {
+                    @media (max-width: 730px) {
+                        display: none;
+                    }
+                }
+            }
             .thirdProjectSecondContainer {
                 @media (max-width: 1250px) {
                     align-items: center;
@@ -354,6 +429,10 @@ body {
             margin-left: 25px;
             margin-right: 25px;
         }
+        @media (max-width: 435px) {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
         .skillsTitle {
             @extend .title-style;
         }
@@ -368,6 +447,9 @@ body {
             @media (max-width: 830px) {
                 margin: 30px 50px;
             }
+            @media (max-width: 465px) {
+                margin: 30px 15px;
+            }
 
             .skillsTitleContainer {
                 display: flex;
@@ -380,6 +462,9 @@ body {
                     @media (max-width: 865px) {
                         padding: 55px;
                     }
+                    @media (max-width: 540px) {
+                        padding: 35px;
+                    }
                 }
             }
             .SoftwareSkillsContainer,
@@ -388,6 +473,11 @@ body {
                 display: flex;
                 align-items: flex-start;
                 padding: 15px 15px;
+                @media (max-width: 540px) {
+                    max-height: 305px;
+                    overflow: auto;
+                    overflow-x: hidden;
+                }
                 .iconContainer {
                     display: flex;
                     align-items: center;
@@ -398,6 +488,37 @@ body {
                         gap: 8px;
                         margin: 10px 20px;
                         cursor: pointer;
+                        img {
+                            width: 65px;
+                            height: auto;
+                            @media (max-width: 550px) {
+                                width: 35px;
+                            }
+                        }
+                        .postgreLogo {
+                            //63
+                            width: 63px;
+                            height: auto;
+                            @media (max-width: 550px) {
+                                width: 33px;
+                            }
+                        }
+                        .cssLogo {
+                            //60
+                            width: 60px;
+                            height: auto;
+                            @media (max-width: 550px) {
+                                width: 30px;
+                            }
+                        }
+                        .javaLogo {
+                            //50
+                            width: 50px;
+                            height: auto;
+                            @media (max-width: 550px) {
+                                width: 28px;
+                            }
+                        }
                         span {
                             color: #ffffffad;
                             font-weight: 400;
@@ -435,6 +556,9 @@ body {
                 flex-direction: column;
                 align-items: unset;
             }
+            @media (max-width: 435px) {
+                padding: 15px;
+            }
             .textImageContainer {
                 display: flex;
                 flex-direction: column-reverse;
@@ -452,6 +576,7 @@ body {
                 }
                 .firstExperienceContainer {
                     img {
+                        border-radius: 6px;
                         border: 1px solid #323030;
                         width: 550px;
                         height: auto;
@@ -460,6 +585,26 @@ body {
                         }
                         @media (max-width: 535px) {
                             width: 400px;
+                        }
+                        @media (max-width: 600px) {
+                            display: none;
+                        }
+                    }
+                    .projexMobile {
+                        border-radius: 6px;
+                        @media (min-width: 600px) {
+                            display: none;
+                        }
+                        @media (max-width: 600px) {
+                            display: unset;
+                            height: 500px;
+                            width: auto;
+                        }
+                        @media (max-width: 400px) {
+                            height: 450px;
+                        }
+                        @media (max-width: 370px) {
+                            height: 350px;
                         }
                     }
                 }
@@ -512,6 +657,10 @@ body {
             margin-left: 25px;
             margin-right: 25px;
         }
+        @media (max-width: 435px) {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
         .contactTitle {
             @extend .title-style;
             padding-bottom: 0px;
@@ -544,6 +693,7 @@ body {
         margin-bottom: 15px;
         span {
             color: $grey-text;
+            text-align: center;
         }
     }
 }
