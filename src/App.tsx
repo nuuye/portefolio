@@ -230,7 +230,7 @@ function App() {
                         </div>
                         <div className="presentationContainer">
                             <p>
-                                Hello, my name is Thomas Mostowfi I am actively
+                                Hello, my name is Thomas Mostowfi and I am actively
                                 seeking a full-time <b>6 months</b> internship
                                 opportunity starting from <b>March, 2024</b>.
                             </p>
