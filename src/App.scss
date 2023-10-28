@@ -23,7 +23,7 @@ header {
     left: 0;
     right: 0;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 0 50px;
     transition: top 0.3s;
     @media (max-width: 555px) {
