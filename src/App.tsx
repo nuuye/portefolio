@@ -175,7 +175,7 @@ function App() {
                                             sx={customPresentationButtonStyle}
                                         >
                                             Languages <br />
-                                            English (toeic 830 ≈ B2), Persian
+                                            English (toeic 830 ≈ B2), French (fluent)
                                         </Button>
                                     </div>
                                 </div>
