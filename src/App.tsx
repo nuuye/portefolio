@@ -52,6 +52,7 @@ const customPresentationButtonStyle = {
     textAlign: 'left',
     borderRadius: 4,
     lineHeight: 1.4,
+    color: '#2b86ff',
 };
 
 function App() {
@@ -99,7 +100,7 @@ function App() {
                     className="homeButton"
                     onClick={() => scrollToSection('firstContainerSection')}
                 >
-                    <HomeIcon color="primary" sx={{ fontSize: 32 }} />
+                    <HomeIcon sx={{ fontSize: 32, color: '#2b86ff' }} />
                 </button>
                 <div className="rightButtons">
                     <IconLabelButtons
@@ -150,7 +151,9 @@ function App() {
                                 <div>
                                     <div className="infoContainer">
                                         <IconContainer background="#373743">
-                                            <ConnectWithoutContactIcon color="primary" />
+                                            <ConnectWithoutContactIcon
+                                                sx={{ color: '#2b86ff' }}
+                                            />
                                         </IconContainer>
                                         <Button
                                             variant="text"
@@ -163,10 +166,10 @@ function App() {
                                     <div className="infoContainer">
                                         <IconContainer background="#373743">
                                             <TranslateIcon
-                                                color="primary"
                                                 sx={{
                                                     width: '40',
                                                     height: '40',
+                                                    color: '#2b86ff',
                                                 }}
                                             />
                                         </IconContainer>
@@ -175,7 +178,8 @@ function App() {
                                             sx={customPresentationButtonStyle}
                                         >
                                             Languages <br />
-                                            English (toeic 830 ≈ B2), French (fluent)
+                                            English (toeic 830 ≈ B2), French
+                                            (fluent)
                                         </Button>
                                     </div>
                                 </div>
@@ -187,7 +191,9 @@ function App() {
                                     >
                                         <div className="infoContainer">
                                             <IconContainer background="#373743">
-                                                <GitHubIcon color="primary" />
+                                                <GitHubIcon
+                                                    sx={{ color: '#2b86ff' }}
+                                                />
                                             </IconContainer>
                                             <Button
                                                 variant="text"
@@ -207,7 +213,9 @@ function App() {
                                     >
                                         <div className="infoContainer">
                                             <IconContainer background="#373743">
-                                                <LocationOnIcon color="primary" />
+                                                <LocationOnIcon
+                                                    sx={{ color: '#2b86ff' }}
+                                                />
                                             </IconContainer>
                                             <Button
                                                 variant="text"
@@ -230,9 +238,10 @@ function App() {
                         </div>
                         <div className="presentationContainer">
                             <p>
-                                Hello, my name is Thomas Mostowfi and I am actively
-                                seeking a full-time <b>6 months</b> internship
-                                opportunity starting from <b>March, 2024</b>.
+                                Hello, my name is Thomas Mostowfi and I am
+                                actively seeking a full-time <b>6 months</b>{' '}
+                                internship opportunity starting from{' '}
+                                <b>March, 2024</b>.
                             </p>
                             <p>
                                 My educational background revolves around
@@ -276,7 +285,7 @@ function App() {
                                                 }}
                                                 primary="Sapienza Università di Roma, Rome, Italie"
                                                 secondary={
-                                                    'I went to La Sapienza for 6 months to study cyber-security.'
+                                                    'I went to La Sapienza for 6 months to study computer science.'
                                                 }
                                             />
                                         </ListItem>
@@ -306,7 +315,9 @@ function App() {
                             <div className="secondBackgroundContainer">
                                 <div className="titleContainer">
                                     <IconContainer background="#373743">
-                                        <InterestsIcon color="primary" />
+                                        <InterestsIcon
+                                            sx={{ color: '#2b86ff' }}
+                                        />
                                     </IconContainer>
                                     <span>Interest</span>
                                 </div>
@@ -437,7 +448,7 @@ function App() {
                                         background="#383939"
                                         tooltip="See the code"
                                     >
-                                        <GitHubIcon color="primary" />
+                                        <GitHubIcon sx={{ color: '#2b86ff' }} />
                                     </IconContainer>
                                 </a>
                                 <IconLabelButtons
@@ -502,7 +513,7 @@ function App() {
                                         background="#383939"
                                         tooltip="See the code"
                                     >
-                                        <GitHubIcon color="primary" />
+                                        <GitHubIcon sx={{ color: '#2b86ff' }} />
                                     </IconContainer>
                                 </a>
                                 <IconLabelButtons
@@ -562,7 +573,7 @@ function App() {
                                     background="#383939"
                                     tooltip="See the code"
                                 >
-                                    <GitHubIcon color="primary" />
+                                    <GitHubIcon sx={{ color: '#2b86ff' }} />
                                 </IconContainer>
                                 <IconLabelButtons
                                     Variant="outlined"
@@ -907,7 +918,7 @@ function App() {
                         <div className="contactContainer">
                             <div className="emailContainer">
                                 <IconContainer background="#373743" size={45}>
-                                    <EmailIcon color="primary" />
+                                    <EmailIcon sx={{ color: '#2b86ff' }} />
                                 </IconContainer>
                                 <Button
                                     variant="text"
@@ -919,7 +930,7 @@ function App() {
                             </div>
                             <div className="phoneContainer">
                                 <IconContainer background="#373743" size={45}>
-                                    <PhoneIcon color="primary" />
+                                    <PhoneIcon sx={{ color: '#2b86ff' }} />
                                 </IconContainer>
                                 <Button
                                     variant="text"

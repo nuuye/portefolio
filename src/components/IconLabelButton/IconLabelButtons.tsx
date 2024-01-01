@@ -25,6 +25,7 @@ export default function IconLabelButtons(props: IconLabelButtonsProps) {
                 sx={{
                     borderRadius: 4,
                     textTransform: { textTransform },
+                    color: '#2b86ff'
                 }}
                 size={size ? size : 'small'}
                 onClick={onClick}
