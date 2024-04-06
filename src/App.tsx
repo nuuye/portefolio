@@ -238,25 +238,22 @@ function App() {
                         </div>
                         <div className="presentationContainer">
                             <p>
-                                Hello, my name is Thomas Mostowfi and I am
-                                actively seeking a full-time <b>6 months</b>{' '}
-                                internship opportunity starting from{' '}
-                                <b>March, 2024</b>.
+                                👋 Hello, my name is Thomas Mostowfi, I am
+                                currently engaged in a full-time 6-month
+                                internship at Niji, spanning from April 2024
+                                until the end of September.
                             </p>
                             <p>
-                                My educational background revolves around
-                                Computer Science and Mathematics, equipping me
-                                with a solid foundation in these fields. My
-                                skillset includes proficiency in
-                                <b> React, C++, and Java</b>, which I have honed
-                                through dedicated training and practical
-                                application.
+                                While I'm dedicated to making the most of my
+                                time at Niji, I'm also keeping an eye out for
+                                opportunities beyond September. I'm eager to
+                                continue growing and contributing in new
+                                professional settings.
                             </p>
                             <p>
-                                I am eager to contribute my knowledge and skills
-                                to a dynamic team while further developing my
-                                abilities in a real-world professional setting
-                                during this internship.
+                                If you have a role or project that aligns with
+                                my skills and ambitions, I'd love to connect and
+                                explore how I can make a positive impact.
                             </p>
                         </div>
                         <div className="backgroundContainer">
