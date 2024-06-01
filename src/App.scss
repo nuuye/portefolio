@@ -68,14 +68,14 @@ a {
 html,
 body {
     background-color: #333231;
-    margin: 0;
+    margin: -3px;
     .mainContainer {
         display: flex;
         margin: 50px 50px 30px 50px;
         background-color: #333231;
         gap: 15px;
         height: 88vh;
-        margin-top: 85px;
+        margin-top: 75px;
         @media (max-width: 1290px) {
             flex-direction: column;
             height: unset;
