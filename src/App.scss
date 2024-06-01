@@ -74,9 +74,9 @@ body {
         margin: 50px 50px 30px 50px;
         background-color: #333231;
         gap: 15px;
-        height: 85vh;
+        height: 88vh;
         margin-top: 85px;
-        @media (max-width: 1170px) {
+        @media (max-width: 1290px) {
             flex-direction: column;
             height: unset;
         }
@@ -123,14 +123,14 @@ body {
             }
             .contactContainer {
                 flex: 2;
-                margin: 15px;
+                margin: 0px 15px 15px 15px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 @media (max-width: 1300px) {
                     margin-top: 8px;
                 }
-                @media (max-width: 1170px) {
+                @media (max-width: 1290px) {
                     flex-direction: row;
                 }
                 .temporaryDiv {
@@ -156,7 +156,7 @@ body {
                 p {
                     color: #ffffffad;
                 }
-                @media (max-width: 1410px) {
+                @media (max-width: 1436px) {
                     :nth-child(1) {
                         margin-top: 0px;
                     }
