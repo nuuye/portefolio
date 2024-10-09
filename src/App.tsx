@@ -238,17 +238,17 @@ function App() {
                         </div>
                         <div className="presentationContainer">
                             <p>
-                                👋 Hello, my name is Thomas Mostowfi, I am
-                                currently engaged in a full-time 6-month
-                                internship at Niji, spanning from April 2024
-                                until the end of September.
+                                👋 Hello, I'm Thomas Mostowfi. I recently
+                                graduated from Polytech Paris-Saclay with a
+                                degree in computer science.
                             </p>
                             <p>
-                                While I'm dedicated to making the most of my
-                                time at Niji, I'm also keeping an eye out for
-                                opportunities beyond September. I'm eager to
-                                continue growing and contributing in new
-                                professional settings.
+                                I am now actively seeking new opportunities,
+                                with a strong interest in cybersecurity. My
+                                background in web development and recent
+                                experience in software development provide a
+                                solid foundation, and I'm eager to apply my
+                                skills to security-related challenges.
                             </p>
                             <p>
                                 If you have a role or project that aligns with
