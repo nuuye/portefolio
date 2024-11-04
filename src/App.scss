@@ -75,6 +75,7 @@ html,
 body {
     background-color: #333231;
     margin: -3px;
+    overflow-x: clip;
     .mainContainer {
         display: flex;
         margin: 50px 50px 30px 50px;
