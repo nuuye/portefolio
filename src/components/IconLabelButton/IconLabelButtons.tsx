@@ -5,6 +5,7 @@ import './IconLabelButtons.scss';
 
 interface IconLabelButtonsProps {
     children?: string | ReactNode;
+    Color?: string;
     Icon?: ReactNode;
     StartIcon?: boolean;
     Variant?: 'text' | 'outlined' | 'contained';
@@ -14,7 +15,7 @@ interface IconLabelButtonsProps {
 }
 
 export default function IconLabelButtons(props: IconLabelButtonsProps) {
-    const { children, Icon, Variant, StartIcon, size, textTransform, onClick } =
+    const { children, Icon, Color, Variant, StartIcon, size, textTransform, onClick } =
         props;
     return (
         <div>
@@ -25,7 +26,8 @@ export default function IconLabelButtons(props: IconLabelButtonsProps) {
                 sx={{
                     borderRadius: 4,
                     textTransform: { textTransform },
-                    color: '#2b86ff'
+                    color: Color ? Color : '#2b86ff',
+                    borderColor: Color ? Color : '#2b86ff'
                 }}
                 size={size ? size : 'small'}
                 onClick={onClick}

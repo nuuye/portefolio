@@ -42,6 +42,12 @@ header {
         @media (max-width: 555px) {
             gap: 10px;
         }
+        @media (max-width: 380px) {
+            gap: 5px;
+        }
+        @media (max-width: 360px) {
+            gap: 1px;
+        }
     }
 
     .homeButton {
@@ -290,6 +296,7 @@ body {
                 }
                 .projectIconContainer {
                     display: flex;
+                    flex-wrap: wrap;
                     align-items: center;
                     gap: 5px;
                 }
@@ -366,6 +373,7 @@ body {
                 }
                 .projectIconContainer {
                     display: flex;
+                    flex-wrap: wrap;
                     align-items: center;
                     gap: 5px;
                 }
@@ -469,7 +477,8 @@ body {
             }
             .SoftwareSkillsContainer,
             .FrontSkillsContainer,
-            .BackSkillsContainer {
+            .BackSkillsContainer,
+            .SecuritySkillsContainer {
                 display: flex;
                 align-items: flex-start;
                 padding: 15px 15px;
@@ -483,7 +492,9 @@ body {
                     align-items: center;
                     flex-wrap: wrap;
                     a {
+                        width: 65px;
                         display: flex;
+                        align-items: center;
                         flex-direction: column;
                         gap: 8px;
                         margin: 10px 20px;
@@ -503,6 +514,7 @@ body {
                                 width: 33px;
                             }
                         }
+
                         .cssLogo {
                             //60
                             width: 60px;
@@ -643,6 +655,8 @@ body {
                 }
                 .projectIconContainer {
                     display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
                     margin-top: 10px;
                 }
             }

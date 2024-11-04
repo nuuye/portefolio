@@ -21,6 +21,11 @@ import projexPicture from '../src/images/projex.jpg';
 import nodejsPicture from '../src/images/nodejs.png';
 import postmanPicture from '../src/images/postman.png';
 import postgrePicture from '../src/images/postgre.png';
+import metasploitPicture from '../src/images/metasploit.png';
+import johnTheRipperPicture from '../src/images/johntheripper.png';
+import burpSuitePicture from '../src/images/burpsuite.png';
+import nmapPicture from '../src/images/nmap.png';
+import kaliLinuxPicture from '../src/images/kaliLinux.png';
 import projexMobile from '../src/images/projexMobile.png';
 import dominionMobile from '../src/images/dominionMobile.png';
 import obisMobile from '../src/images/obisMobile.gif';
@@ -57,12 +62,10 @@ const customPresentationButtonStyle = {
 
 function App() {
     const [display, setDisplay] = useState<string>('0');
-    const [softwareBorderRightVisible, setSoftwareBorderRightVisible] =
-        useState(false);
-    useState(false);
-    const [frontBorderRightVisible, setFrontBorderRightVisible] =
-        useState(true);
+    const [softwareBorderRightVisible, setSoftwareBorderRightVisible] = useState(false);
+    const [frontBorderRightVisible, setFrontBorderRightVisible] = useState(true);
     const [backBorderRightVisible, setBackBorderRightVisible] = useState(true);
+    const [securityBorderRightVisible, setSecurityBorderRightVisible] = useState(true);
 
     const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
     const [visible, setVisible] = useState<boolean>(true);
@@ -70,9 +73,7 @@ function App() {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollPos = window.pageYOffset;
-            setVisible(
-                prevScrollPos > currentScrollPos || currentScrollPos < 50
-            );
+            setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 50);
             setPrevScrollPos(currentScrollPos);
         };
 
@@ -178,8 +179,7 @@ function App() {
                                             sx={customPresentationButtonStyle}
                                         >
                                             Languages <br />
-                                            English (toeic 830 ≈ B2), French
-                                            (fluent)
+                                            English (toeic 830 ≈ B2), French (fluent)
                                         </Button>
                                     </div>
                                 </div>
@@ -191,15 +191,11 @@ function App() {
                                     >
                                         <div className="infoContainer">
                                             <IconContainer background="#373743">
-                                                <GitHubIcon
-                                                    sx={{ color: '#2b86ff' }}
-                                                />
+                                                <GitHubIcon sx={{ color: '#2b86ff' }} />
                                             </IconContainer>
                                             <Button
                                                 variant="text"
-                                                sx={
-                                                    customPresentationButtonStyle
-                                                }
+                                                sx={customPresentationButtonStyle}
                                             >
                                                 GitHub <br />
                                                 https://github.com/nuuye
@@ -219,9 +215,7 @@ function App() {
                                             </IconContainer>
                                             <Button
                                                 variant="text"
-                                                sx={
-                                                    customPresentationButtonStyle
-                                                }
+                                                sx={customPresentationButtonStyle}
                                             >
                                                 Location <br />
                                                 Hellemmes, Lille - France
@@ -238,22 +232,20 @@ function App() {
                         </div>
                         <div className="presentationContainer">
                             <p>
-                                👋 Hello, I'm Thomas Mostowfi. I recently
-                                graduated from Polytech Paris-Saclay with a
-                                degree in computer science.
+                                👋 Hello, I'm Thomas Mostowfi. I recently graduated from
+                                Polytech Paris-Saclay with a degree in computer science.
                             </p>
                             <p>
-                                I am now actively seeking new opportunities,
-                                with a strong interest in cybersecurity. My
-                                background in web development and recent
-                                experience in software development provide a
-                                solid foundation, and I'm eager to apply my
+                                I am now actively seeking new opportunities, with a strong
+                                interest in cybersecurity. My background in web
+                                development and recent experience in software development
+                                provide a solid foundation, and I'm eager to apply my
                                 skills to security-related challenges.
                             </p>
                             <p>
-                                If you have a role or project that aligns with
-                                my skills and ambitions, I'd love to connect and
-                                explore how I can make a positive impact.
+                                If you have a role or project that aligns with my skills
+                                and ambitions, I'd love to connect and explore how I can
+                                make a positive impact.
                             </p>
                         </div>
                         <div className="backgroundContainer">
@@ -312,9 +304,7 @@ function App() {
                             <div className="secondBackgroundContainer">
                                 <div className="titleContainer">
                                     <IconContainer background="#373743">
-                                        <InterestsIcon
-                                            sx={{ color: '#2b86ff' }}
-                                        />
+                                        <InterestsIcon sx={{ color: '#2b86ff' }} />
                                     </IconContainer>
                                     <span>Interest</span>
                                 </div>
@@ -410,26 +400,26 @@ function App() {
                             <div className="firstProjectTextContainer">
                                 <div>
                                     <p>
-                                        This project is a replica of the classic
-                                        Windows Calculator built using React.js.
+                                        This project is a replica of the classic Windows
+                                        Calculator built using React.js.
                                     </p>
                                     <p>
                                         The goal of this project was to create a
                                         functional and visually similar version
                                         <br />
-                                        of the original calculator using modern
-                                        web development technologies.
+                                        of the original calculator using modern web
+                                        development technologies.
                                     </p>
                                     <p>
-                                        The calculator features all the basic
-                                        functions such as addition, subtraction,
+                                        The calculator features all the basic functions
+                                        such as addition, subtraction,
                                         <br />
-                                        multiplication, and division, as well as
-                                        advanced functions.
+                                        multiplication, and division, as well as advanced
+                                        functions.
                                     </p>
                                     <p>
-                                        The user interface has been designed to
-                                        closely match the original calculator,
+                                        The user interface has been designed to closely
+                                        match the original calculator,
                                         <br />
                                         with a simple and easy-to-use layout.
                                     </p>
@@ -448,22 +438,13 @@ function App() {
                                         <GitHubIcon sx={{ color: '#2b86ff' }} />
                                     </IconContainer>
                                 </a>
-                                <IconLabelButtons
-                                    Variant="outlined"
-                                    textTransform="none"
-                                >
+                                <IconLabelButtons Variant="outlined" textTransform="none">
                                     React.js
                                 </IconLabelButtons>
-                                <IconLabelButtons
-                                    Variant="outlined"
-                                    textTransform="none"
-                                >
+                                <IconLabelButtons Variant="outlined" textTransform="none">
                                     TypeScript
                                 </IconLabelButtons>
-                                <IconLabelButtons
-                                    Variant="outlined"
-                                    textTransform="none"
-                                >
+                                <IconLabelButtons Variant="outlined" textTransform="none">
                                     Scss
                                 </IconLabelButtons>
                             </div>
@@ -475,28 +456,24 @@ function App() {
                             <div className="secondProjectTextContainer">
                                 <div>
                                     <p>
-                                        This project is a command-line
-                                        implementation of the popular card game
-                                        Dominion, created using C++.
+                                        This project is a command-line implementation of
+                                        the popular card game Dominion, created using C++.
                                     </p>
                                     <p>
-                                        Dominion is a deck-building card game
-                                        known for its strategic depth and
-                                        intricate card interactions.
+                                        Dominion is a deck-building card game known for
+                                        its strategic depth and intricate card
+                                        interactions.
                                     </p>
                                     <p>
-                                        The primary objective of this project
-                                        was to replicate the gameplay experience
-                                        of Dominion for two players in a
-                                        text-based format.
+                                        The primary objective of this project was to
+                                        replicate the gameplay experience of Dominion for
+                                        two players in a text-based format.
                                     </p>
                                     <p>
-                                        The user interface is designed for ease
-                                        of use within the command-line
-                                        environment, allowing players to input
-                                        their actions and make strategic
-                                        decisions through simple text-based
-                                        commands.{' '}
+                                        The user interface is designed for ease of use
+                                        within the command-line environment, allowing
+                                        players to input their actions and make strategic
+                                        decisions through simple text-based commands.{' '}
                                     </p>
                                 </div>
                             </div>
@@ -513,16 +490,10 @@ function App() {
                                         <GitHubIcon sx={{ color: '#2b86ff' }} />
                                     </IconContainer>
                                 </a>
-                                <IconLabelButtons
-                                    Variant="outlined"
-                                    textTransform="none"
-                                >
+                                <IconLabelButtons Variant="outlined" textTransform="none">
                                     C++
                                 </IconLabelButtons>
-                                <IconLabelButtons
-                                    Variant="outlined"
-                                    textTransform="none"
-                                >
+                                <IconLabelButtons Variant="outlined" textTransform="none">
                                     CMake
                                 </IconLabelButtons>
                             </div>
@@ -550,17 +521,16 @@ function App() {
                             <div className="thirdProjectTextContainer">
                                 <div>
                                     <p>
-                                        An application showing data from the
-                                        Ocean Biodiversity Information System
-                                        (OBIS) on a 3D globe.{' '}
+                                        An application showing data from the Ocean
+                                        Biodiversity Information System (OBIS) on a 3D
+                                        globe.{' '}
                                         <p>
-                                            You can choose the species and
-                                            specify a date range.
+                                            You can choose the species and specify a date
+                                            range.
                                         </p>
                                         <p>
-                                            Mooving the globe is possible and
-                                            the interface was made using scene
-                                            builder.
+                                            Mooving the globe is possible and the
+                                            interface was made using scene builder.
                                         </p>
                                     </p>
                                 </div>
@@ -572,22 +542,13 @@ function App() {
                                 >
                                     <GitHubIcon sx={{ color: '#2b86ff' }} />
                                 </IconContainer>
-                                <IconLabelButtons
-                                    Variant="outlined"
-                                    textTransform="none"
-                                >
+                                <IconLabelButtons Variant="outlined" textTransform="none">
                                     Java
                                 </IconLabelButtons>
-                                <IconLabelButtons
-                                    Variant="outlined"
-                                    textTransform="none"
-                                >
+                                <IconLabelButtons Variant="outlined" textTransform="none">
                                     JavaFX
                                 </IconLabelButtons>
-                                <IconLabelButtons
-                                    Variant="outlined"
-                                    textTransform="none"
-                                >
+                                <IconLabelButtons Variant="outlined" textTransform="none">
                                     Scene Builder
                                 </IconLabelButtons>
                             </div>
@@ -606,6 +567,8 @@ function App() {
                                     setFrontBorderRightVisible(true);
 
                                     setBackBorderRightVisible(true);
+
+                                    setSecurityBorderRightVisible(true);
                                 }}
                                 style={{
                                     boxShadow: 'none',
@@ -630,6 +593,8 @@ function App() {
                                     setFrontBorderRightVisible(false);
 
                                     setBackBorderRightVisible(true);
+
+                                    setSecurityBorderRightVisible(true);
                                 }}
                                 style={{
                                     boxShadow: 'none',
@@ -651,6 +616,8 @@ function App() {
                                     setFrontBorderRightVisible(true);
 
                                     setBackBorderRightVisible(false);
+
+                                    setSecurityBorderRightVisible(true);
                                 }}
                                 style={{
                                     boxShadow: 'none',
@@ -663,6 +630,29 @@ function App() {
                                 }}
                             >
                                 Back-end Web
+                            </div>
+                            <div
+                                onClick={() => {
+                                    setDisplay('3');
+                                    setSoftwareBorderRightVisible(true);
+
+                                    setFrontBorderRightVisible(true);
+
+                                    setBackBorderRightVisible(true);
+
+                                    setSecurityBorderRightVisible(false);
+                                }}
+                                style={{
+                                    boxShadow: 'none',
+                                    border: securityBorderRightVisible
+                                        ? 'none'
+                                        : '2px solid #323030',
+                                    borderRight: securityBorderRightVisible
+                                        ? '2px solid #323030'
+                                        : 'none',
+                                }}
+                            >
+                                Cyber Security tools
                             </div>
                         </div>
                         <div
@@ -699,10 +689,7 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={pythonPicture}
-                                        alt="python logo"
-                                    />
+                                    <img src={pythonPicture} alt="python logo" />
                                     <span>Python</span>
                                 </a>
 
@@ -787,10 +774,7 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={materialPicture}
-                                        alt="materialUI logo"
-                                    />
+                                    <img src={materialPicture} alt="materialUI logo" />
                                     <span>Material UI</span>
                                 </a>
                             </div>
@@ -819,10 +803,7 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={postmanPicture}
-                                        alt="postman logo"
-                                    />
+                                    <img src={postmanPicture} alt="postman logo" />
                                     <span>Postman</span>
                                 </a>
                                 <a
@@ -830,11 +811,77 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={nodejsPicture}
-                                        alt="nodejs logo"
-                                    />
+                                    <img src={nodejsPicture} alt="nodejs logo" />
                                     <span>NodeJS</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            className="SecuritySkillsContainer"
+                            style={{
+                                display: display === '3' ? 'flex' : 'none',
+                            }}
+                        >
+                            <div className="iconContainer">
+                                <a
+                                    href="https://www.metasploit.com/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <img
+                                        src={metasploitPicture}
+                                        alt="metasploit logo"
+                                        className="metasploitLogo"
+                                    />
+                                    <span>Metasploit</span>
+                                </a>
+                                <a
+                                    href="https://nmap.org/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <img
+                                        src={nmapPicture}
+                                        alt="nmap logo"
+                                        className="nmapLogo"
+                                    />
+                                    <span>Nmap</span>
+                                </a>
+                                <a
+                                    href="https://portswigger.net/burp/documentation/desktop/getting-started"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <img
+                                        src={burpSuitePicture}
+                                        alt="burp suite logo"
+                                        className="burpsuiteLogo"
+                                    />
+                                    <span>Burp Suite</span>
+                                </a>
+                                <a
+                                    href="https://www.openwall.com/john/doc/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <img
+                                        src={johnTheRipperPicture}
+                                        alt="john the ripper logo"
+                                        className="johnTheRipperLogo"
+                                    />
+                                    <span>John the Ripper</span>
+                                </a>
+                                <a
+                                    href="https://www.kali.org/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <img
+                                        src={kaliLinuxPicture}
+                                        alt="kali linux logo"
+                                        className="kaliLinuxLogo"
+                                    />
+                                    <span>Kali Linux</span>
                                 </a>
                             </div>
                         </div>
@@ -853,56 +900,41 @@ function App() {
                                 />
                             </div>
                             <div className="companyTitle">
-                                <span className="companyTitle">
-                                    Groupe Projex
-                                </span>
-                                <span className="roleTitle">
-                                    developper intern
-                                </span>
+                                <span className="companyTitle">Groupe Projex</span>
+                                <span className="roleTitle">developper intern</span>
                             </div>
                         </div>
                         <div className="firstExperienceExplanation">
                             <div className="firstExperienceText">
                                 <p>
-                                    I did an internship in an IT center and I
-                                    was able to learn HTML, CSS, JavaScript and
-                                    the basics of React.
+                                    I did an internship in an IT center and I was able to
+                                    learn HTML, CSS, JavaScript and the basics of React.
                                 </p>
 
                                 <p>
-                                    One year later, I joined Projex again in
-                                    order to master React (along with
-                                    TypeScript), the NextJS framework and
-                                    manipulate databases.
+                                    One year later, I joined Projex again in order to
+                                    master React (along with TypeScript), the NextJS
+                                    framework and manipulate databases.
                                 </p>
                                 <p>
-                                    I also familiarized myself with project
-                                    management tools such as Jibra or Gitlab.
+                                    I also familiarized myself with project management
+                                    tools such as Jibra or Gitlab.
                                 </p>
                             </div>
                             <div className="projectIconContainer">
-                                <IconLabelButtons
-                                    Variant="outlined"
-                                    textTransform="none"
-                                >
+                                <IconLabelButtons Variant="outlined" textTransform="none" Color='white'>
+                                    1 + 3 months
+                                </IconLabelButtons>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
                                     React.js
                                 </IconLabelButtons>
-                                <IconLabelButtons
-                                    Variant="outlined"
-                                    textTransform="none"
-                                >
+                                <IconLabelButtons Variant="outlined" textTransform="none">
                                     TypeScript
                                 </IconLabelButtons>
-                                <IconLabelButtons
-                                    Variant="outlined"
-                                    textTransform="none"
-                                >
+                                <IconLabelButtons Variant="outlined" textTransform="none">
                                     SCSS & Ant Design
                                 </IconLabelButtons>
-                                <IconLabelButtons
-                                    Variant="outlined"
-                                    textTransform="none"
-                                >
+                                <IconLabelButtons Variant="outlined" textTransform="none">
                                     Next.js
                                 </IconLabelButtons>
                             </div>
@@ -917,10 +949,7 @@ function App() {
                                 <IconContainer background="#373743" size={45}>
                                     <EmailIcon sx={{ color: '#2b86ff' }} />
                                 </IconContainer>
-                                <Button
-                                    variant="text"
-                                    sx={customPresentationButtonStyle}
-                                >
+                                <Button variant="text" sx={customPresentationButtonStyle}>
                                     Email <br />
                                     thomassmostowfi@gmail.com
                                 </Button>
@@ -929,10 +958,7 @@ function App() {
                                 <IconContainer background="#373743" size={45}>
                                     <PhoneIcon sx={{ color: '#2b86ff' }} />
                                 </IconContainer>
-                                <Button
-                                    variant="text"
-                                    sx={customPresentationButtonStyle}
-                                >
+                                <Button variant="text" sx={customPresentationButtonStyle}>
                                     Phone Number <br />
                                     +33(0)7 50 53 36 90
                                 </Button>
@@ -942,8 +968,7 @@ function App() {
                 </div>
                 <div className="endText">
                     <span>
-                        © Built by Thomas Mostowfi using React.js, SCSS and
-                        Material UI.
+                        © Built by Thomas Mostowfi using React.js, SCSS and Material UI.
                     </span>
                 </div>
             </body>
