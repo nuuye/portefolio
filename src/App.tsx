@@ -29,7 +29,8 @@ import kaliLinuxPicture from '../src/images/kaliLinux.png';
 import projexMobile from '../src/images/projexMobile.png';
 import dominionMobile from '../src/images/dominionMobile.png';
 import obisMobile from '../src/images/obisMobile.gif';
-
+import nijiPicture from '../src/images/niji_homepage.png';
+import nijiMobilePicture from '../src/images/niji_homepage_mobile.png';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PhoneIcon from '@mui/icons-material/Phone';
@@ -899,7 +900,7 @@ function App() {
                                     className="projexMobile"
                                 />
                             </div>
-                            <div className="companyTitle">
+                            <div className="companyContainer">
                                 <span className="companyTitle">Groupe Projex</span>
                                 <span className="roleTitle">developper intern</span>
                             </div>
@@ -922,7 +923,11 @@ function App() {
                                 </p>
                             </div>
                             <div className="projectIconContainer">
-                                <IconLabelButtons Variant="outlined" textTransform="none" Color='white'>
+                                <IconLabelButtons
+                                    Variant="outlined"
+                                    textTransform="none"
+                                    Color="white"
+                                >
                                     1 + 3 months
                                 </IconLabelButtons>
                                 <IconLabelButtons Variant="outlined" textTransform="none">
@@ -936,6 +941,65 @@ function App() {
                                 </IconLabelButtons>
                                 <IconLabelButtons Variant="outlined" textTransform="none">
                                     Next.js
+                                </IconLabelButtons>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="diviser"></div>
+                    <div className="secondExperience">
+                        <div className="secondTextImageContainer">
+                            <div className="secondExperienceContainer">
+                                <img src={nijiPicture} alt="NijiPicture" />
+                                <img
+                                    src={nijiMobilePicture}
+                                    alt="NijiMobilePicture"
+                                    className="nijiMobile"
+                                />
+                            </div>
+                            <div className="companyContainer">
+                                <span className="companyTitle">Niji</span>
+                                <span className="roleTitle">
+                                    Salesforce full-stack developper intern
+                                </span>
+                            </div>
+                        </div>
+                        <div className="secondExperienceExplanation">
+                            <div className="secondExperienceText">
+                                <p>
+                                    I gained hands-on experience in developing with Apex
+                                    and working within the Salesforce environment.
+                                </p>
+                                <p>
+                                    I developed several custom components using Lightning
+                                    Web Components (LWC), created and optimized triggers,
+                                    and implemented batch processing.
+                                </p>
+                                <p>
+                                    This experience sharpened my skills in JavaScript,
+                                    Apex, and SOQL, allowing me to contribute to the
+                                    development of dynamic and efficient Salesforce
+                                    applications.
+                                </p>
+                            </div>
+                            <div className="projectIconContainer">
+                                <IconLabelButtons
+                                    Variant="outlined"
+                                    textTransform="none"
+                                    Color="white"
+                                >
+                                    6 months
+                                </IconLabelButtons>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    Salesforce
+                                </IconLabelButtons>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    Apex
+                                </IconLabelButtons>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    JavaScript
+                                </IconLabelButtons>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    SOQL
                                 </IconLabelButtons>
                             </div>
                         </div>
@@ -960,7 +1024,7 @@ function App() {
                                 </IconContainer>
                                 <Button variant="text" sx={customPresentationButtonStyle}>
                                     Phone Number <br />
-                                    +33(0)7 50 53 36 90
+                                    +33(0)7 43 27 40 80
                                 </Button>
                             </div>
                         </div>

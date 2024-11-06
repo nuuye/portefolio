@@ -552,7 +552,7 @@ body {
         }
     }
     .fourthContainer {
-        .firstExperience {
+        .firstExperience, .secondExperience {
             display: flex;
             align-items: flex-end;
             gap: 30px;
@@ -572,7 +572,7 @@ body {
             @media (max-width: 435px) {
                 padding: 15px;
             }
-            .textImageContainer {
+            .textImageContainer, .secondTextImageContainer {
                 display: flex;
                 flex-direction: column-reverse;
                 align-items: flex-start;
@@ -587,11 +587,11 @@ body {
                     flex-direction: column-reverse;
                     gap: 15px;
                 }
-                .firstExperienceContainer {
+                .firstExperienceContainer, .secondExperienceContainer {
                     img {
                         border-radius: 6px;
                         border: 1px solid #323030;
-                        width: 550px;
+                        width: 485px;
                         height: auto;
                         @media (max-width: 670px) {
                             width: 450px;
@@ -603,7 +603,7 @@ body {
                             display: none;
                         }
                     }
-                    .projexMobile {
+                    .projexMobile, .nijiMobile {
                         border-radius: 6px;
                         @media (min-width: 600px) {
                             display: none;
@@ -621,7 +621,17 @@ body {
                         }
                     }
                 }
-                .companyTitle {
+                .secondExperienceContainer {
+                    img {
+                        height: 288px;
+                        width: auto;
+                        @media (min-width: 600px) {
+                            width: 450px;
+                            height: auto;
+                        }
+                    }
+                }
+                .companyContainer {
                     span {
                         display: flex;
                         justify-content: flex-start;
@@ -640,13 +650,33 @@ body {
                     }
                 }
             }
-            .firstExperienceExplanation {
+            .secondTextImageContainer {
+                align-items: flex-end;
+                .companyContainer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    @media (max-width: 1215px) {
+                        align-items: center;
+                        text-align: center;
+                    }
+                }
+                @media (max-width: 1215px) {
+                    flex-direction: row-reverse;
+                }
+                @media (max-width: 1000px) {
+                    align-items: center;
+                    flex-direction: column-reverse;
+                }
+                
+            }
+            .firstExperienceExplanation, .secondExperienceExplanation {
                 @media (max-width: 1000px) {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                 }
-                .firstExperienceText {
+                .firstExperienceText, .secondExperienceText {
                     @extend .container-style;
                     background-color: #383939;
                     padding: 15px;
@@ -662,7 +692,18 @@ body {
                 }
             }
         }
+        .secondExperience {
+            flex-direction: row-reverse;
+            @media (max-width: 1215px) {
+                flex-direction: column;
+                align-items: unset;
+            }
+        }
     }
+
+
+
+    
     .fifthContainer {
         margin: 30px 50px;
         @extend .container-style;
