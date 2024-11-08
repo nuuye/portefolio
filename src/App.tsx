@@ -44,7 +44,6 @@ import IconLabelButtons from './components/IconLabelButton/IconLabelButtons';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import Button from '@mui/material/Button';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
-import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
 
 import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import SchoolIcon from '@mui/icons-material/School';
