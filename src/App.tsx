@@ -27,6 +27,9 @@ import burpSuitePicture from '../src/images/burpsuite.png';
 import nmapPicture from '../src/images/nmap.png';
 import kaliLinuxPicture from '../src/images/kaliLinux.png';
 import projexMobile from '../src/images/projexMobile.png';
+import tryhackmePicture from '../src/images/tryhackme-homepage.png';
+import tryhackmeMobile from '../src/images/tryhackme-mobile.png';
+
 import dominionMobile from '../src/images/dominionMobile.png';
 import obisMobile from '../src/images/obisMobile.gif';
 import nijiPicture from '../src/images/niji_homepage.png';
@@ -41,6 +44,7 @@ import IconLabelButtons from './components/IconLabelButton/IconLabelButtons';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import Button from '@mui/material/Button';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
 
 import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import SchoolIcon from '@mui/icons-material/School';
@@ -1001,6 +1005,67 @@ function App() {
                                 <IconLabelButtons Variant="outlined" textTransform="none">
                                     SOQL
                                 </IconLabelButtons>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="diviser"></div>
+                    <span className="trainingTitle">Training</span>
+                    <div className="trainingExperience">
+                        <div className="trainingTextImageContainer">
+                            <div className="trainingExperienceContainer">
+                                <img src={tryhackmePicture} alt="TryhackmePicture" />
+                                <img
+                                    src={tryhackmeMobile}
+                                    alt="TryHackMeMobilePicture"
+                                    className="tryhackmeMobile"
+                                />
+                            </div>
+                            <div className="companyContainer">
+                                <span className="companyTitle">
+                                    TryHackMe Security Education
+                                </span>
+                                <span className="roleTitle">Self-taught</span>
+                            </div>
+                        </div>
+                        <div className="trainingExperienceExplanation">
+                            <div className="trainingExperienceText">
+                                <p>
+                                    My TryHackMe training provided extensive practical
+                                    cybersecurity experience through labs and CTF
+                                    challenges that covered port scanning, service
+                                    enumeration, and vulnerability analysis.
+                                </p>
+                                <p>
+                                    This training enhanced my understanding of system, protocols and
+                                    network vulnerabilities, improved my
+                                    problem-solving skills and my ability to
+                                    document findings effectively.
+                                </p>
+                                <p>
+                                    It prepared me for practical security assessments by
+                                    simulating real-world scenarios. Moreover, it favored my
+                                    adaptability in handling diverse security challenges.
+                                </p>
+                                
+                                
+                            </div>
+                            <div className="projectIconContainer">
+                                <IconLabelButtons
+                                    Variant="outlined"
+                                    textTransform="none"
+                                    Color="white"
+                                >
+                                    Since October
+                                </IconLabelButtons>
+                                <a
+                                    href="https://tryhackme.com/r/p/nyu"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    Click to see TryHackMe profile
+                                </IconLabelButtons>
+                                </a>
                             </div>
                         </div>
                     </div>

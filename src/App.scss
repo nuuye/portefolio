@@ -552,7 +552,7 @@ body {
         }
     }
     .fourthContainer {
-        .firstExperience, .secondExperience {
+        .firstExperience, .secondExperience, .trainingExperience {
             display: flex;
             align-items: flex-end;
             gap: 30px;
@@ -572,7 +572,7 @@ body {
             @media (max-width: 435px) {
                 padding: 15px;
             }
-            .textImageContainer, .secondTextImageContainer {
+            .textImageContainer, .secondTextImageContainer, .trainingTextImageContainer {
                 display: flex;
                 flex-direction: column-reverse;
                 align-items: flex-start;
@@ -587,7 +587,7 @@ body {
                     flex-direction: column-reverse;
                     gap: 15px;
                 }
-                .firstExperienceContainer, .secondExperienceContainer {
+                .firstExperienceContainer, .secondExperienceContainer, .trainingExperienceContainer {
                     img {
                         border-radius: 6px;
                         border: 1px solid #323030;
@@ -603,7 +603,7 @@ body {
                             display: none;
                         }
                     }
-                    .projexMobile, .nijiMobile {
+                    .projexMobile, .nijiMobile, .tryhackmeMobile {
                         border-radius: 6px;
                         @media (min-width: 600px) {
                             display: none;
@@ -621,7 +621,7 @@ body {
                         }
                     }
                 }
-                .secondExperienceContainer {
+                .secondExperienceContainer, .trainingExperienceContainer {
                     img {
                         height: 288px;
                         width: auto;
@@ -637,6 +637,9 @@ body {
                         justify-content: flex-start;
                         @media (max-width: 1000px) {
                             justify-content: center;
+                        }
+                        @media (max-width: 560px) {
+                            text-align: center;
                         }
                     }
                     .companyTitle {
@@ -670,13 +673,13 @@ body {
                 }
                 
             }
-            .firstExperienceExplanation, .secondExperienceExplanation {
+            .firstExperienceExplanation, .secondExperienceExplanation, .trainingExperienceExplanation {
                 @media (max-width: 1000px) {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                 }
-                .firstExperienceText, .secondExperienceText {
+                .firstExperienceText, .secondExperienceText, .trainingExperienceText {
                     @extend .container-style;
                     background-color: #383939;
                     padding: 15px;
