@@ -1062,7 +1062,7 @@ function App() {
                                     rel="noreferrer"
                                 >
                                 <IconLabelButtons Variant="outlined" textTransform="none">
-                                    Click to see TryHackMe profile
+                                    Click to view TryHackMe profile
                                 </IconLabelButtons>
                                 </a>
                             </div>
