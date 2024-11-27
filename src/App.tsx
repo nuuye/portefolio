@@ -26,6 +26,7 @@ import johnTheRipperPicture from '../src/images/johntheripper.png';
 import burpSuitePicture from '../src/images/burpsuite.png';
 import nmapPicture from '../src/images/nmap.png';
 import kaliLinuxPicture from '../src/images/kaliLinux.png';
+import hydraPicture from '../src/images/hydra.png';
 import projexMobile from '../src/images/projexMobile.png';
 import tryhackmePicture from '../src/images/tryhackme-homepage.png';
 import tryhackmeMobile from '../src/images/tryhackme-mobile.png';
@@ -863,18 +864,7 @@ function App() {
                                     />
                                     <span>Burp Suite</span>
                                 </a>
-                                <a
-                                    href="https://www.openwall.com/john/doc/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <img
-                                        src={johnTheRipperPicture}
-                                        alt="john the ripper logo"
-                                        className="johnTheRipperLogo"
-                                    />
-                                    <span>John the Ripper</span>
-                                </a>
+                                
                                 <a
                                     href="https://www.kali.org/"
                                     target="_blank"
@@ -886,6 +876,31 @@ function App() {
                                         className="kaliLinuxLogo"
                                     />
                                     <span>Kali Linux</span>
+                                </a>
+                                <a
+                                    href="https://www.kali.org/tools/hydra/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <img
+                                        src={hydraPicture}
+                                        alt="hydra logo"
+                                        className="hydraLogo"
+                                    />
+                                    <span>Hydra</span>
+                                </a>
+                                <a
+                                    href="https://www.openwall.com/john/doc/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className='johnTheRipperContainer'
+                                >
+                                    <img
+                                        src={johnTheRipperPicture}
+                                        alt="john the ripper logo"
+                                        className="johnTheRipperLogo"
+                                    />
+                                    <span>John the Ripper</span>
                                 </a>
                             </div>
                         </div>

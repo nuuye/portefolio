@@ -484,7 +484,7 @@ body {
                 align-items: flex-start;
                 padding: 15px 15px;
                 @media (max-width: 540px) {
-                    max-height: 305px;
+                    max-height: 410px;
                     overflow: auto;
                     overflow-x: hidden;
                 }
@@ -494,21 +494,25 @@ body {
                     flex-wrap: wrap;
                     a {
                         width: 65px;
+                        height: 88px;
                         display: flex;
                         align-items: center;
                         flex-direction: column;
                         gap: 8px;
                         margin: 10px 20px;
                         cursor: pointer;
+                        @media (max-width: 595px) {
+                            height: unset;
+                        }
                         img {
                             width: 65px;
-                            height: auto;
-                            @media (max-width: 550px) {
+                            height: 65px;
+                            @media (max-width: 595px) {
                                 width: 35px;
+                                height: 35px;
                             }
                         }
                         .postgreLogo {
-                            //63
                             width: 63px;
                             height: auto;
                             @media (max-width: 550px) {
@@ -517,7 +521,6 @@ body {
                         }
 
                         .cssLogo {
-                            //60
                             width: 60px;
                             height: auto;
                             @media (max-width: 550px) {
@@ -525,7 +528,6 @@ body {
                             }
                         }
                         .javaLogo {
-                            //50
                             width: 50px;
                             height: auto;
                             @media (max-width: 550px) {
