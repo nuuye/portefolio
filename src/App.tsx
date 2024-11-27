@@ -833,11 +833,7 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={metasploitPicture}
-                                        alt="metasploit logo"
-                                        className="metasploitLogo"
-                                    />
+                                    <img src={metasploitPicture} alt="metasploit logo" />
                                     <span>Metasploit</span>
                                 </a>
                                 <a
@@ -845,11 +841,7 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={nmapPicture}
-                                        alt="nmap logo"
-                                        className="nmapLogo"
-                                    />
+                                    <img src={nmapPicture} alt="nmap logo" />
                                     <span>Nmap</span>
                                 </a>
                                 <a
@@ -857,24 +849,16 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={burpSuitePicture}
-                                        alt="burp suite logo"
-                                        className="burpsuiteLogo"
-                                    />
+                                    <img src={burpSuitePicture} alt="burp suite logo" />
                                     <span>Burp Suite</span>
                                 </a>
-                                
+
                                 <a
                                     href="https://www.kali.org/"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={kaliLinuxPicture}
-                                        alt="kali linux logo"
-                                        className="kaliLinuxLogo"
-                                    />
+                                    <img src={kaliLinuxPicture} alt="kali linux logo" />
                                     <span>Kali Linux</span>
                                 </a>
                                 <a
@@ -882,23 +866,17 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <img
-                                        src={hydraPicture}
-                                        alt="hydra logo"
-                                        className="hydraLogo"
-                                    />
+                                    <img src={hydraPicture} alt="hydra logo" />
                                     <span>Hydra</span>
                                 </a>
                                 <a
                                     href="https://www.openwall.com/john/doc/"
                                     target="_blank"
                                     rel="noreferrer"
-                                    className='johnTheRipperContainer'
                                 >
                                     <img
                                         src={johnTheRipperPicture}
                                         alt="john the ripper logo"
-                                        className="johnTheRipperLogo"
                                     />
                                     <span>John the Ripper</span>
                                 </a>
@@ -1050,18 +1028,17 @@ function App() {
                                     enumeration, and vulnerability analysis.
                                 </p>
                                 <p>
-                                    This training enhanced my understanding of system, protocols and
-                                    network vulnerabilities, improved my
-                                    problem-solving skills and my ability to
-                                    document findings effectively.
+                                    This training enhanced my understanding of system,
+                                    protocols and network vulnerabilities, improved my
+                                    problem-solving skills and my ability to document
+                                    findings effectively.
                                 </p>
                                 <p>
                                     It prepared me for practical security assessments by
-                                    simulating real-world scenarios. Moreover, it favored my
-                                    adaptability in handling diverse security challenges.
+                                    simulating real-world scenarios. Moreover, it favored
+                                    my adaptability in handling diverse security
+                                    challenges.
                                 </p>
-                                
-                                
                             </div>
                             <div className="projectIconContainer">
                                 <IconLabelButtons
@@ -1076,9 +1053,12 @@ function App() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                <IconLabelButtons Variant="outlined" textTransform="none">
-                                    Click to view TryHackMe profile
-                                </IconLabelButtons>
+                                    <IconLabelButtons
+                                        Variant="outlined"
+                                        textTransform="none"
+                                    >
+                                        Click to view TryHackMe profile
+                                    </IconLabelButtons>
                                 </a>
                             </div>
                         </div>
