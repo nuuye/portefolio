@@ -28,8 +28,6 @@ import nmapPicture from '../src/images/nmap.png';
 import kaliLinuxPicture from '../src/images/kaliLinux.png';
 import hydraPicture from '../src/images/hydra.png';
 import projexMobile from '../src/images/projexMobile.png';
-import tryhackmePicture from '../src/images/tryhackme-homepage.png';
-import tryhackmeMobile from '../src/images/tryhackme-mobile.png';
 
 import dominionMobile from '../src/images/dominionMobile.png';
 import obisMobile from '../src/images/obisMobile.gif';
@@ -242,10 +240,10 @@ function App() {
                             </p>
                             <p>
                                 I am now actively seeking new opportunities, with a strong
-                                interest in cybersecurity. My background in web
+                                interest in development and cybersecurity. My background in web
                                 development and recent experience in software development
                                 provide a solid foundation, and I'm eager to apply my
-                                skills to security-related challenges.
+                                skills to real world challenges.
                             </p>
                             <p>
                                 If you have a role or project that aligns with my skills
@@ -382,7 +380,7 @@ function App() {
                                                 secondaryTypographyProps={{
                                                     color: '#ffffff67',
                                                 }}
-                                                primary="Traveling"
+                                                primary="Cybersecurity"
                                             />
                                         </ListItem>
                                     </List>
@@ -657,7 +655,7 @@ function App() {
                                         : 'none',
                                 }}
                             >
-                                Cyber Security tools
+                                Cybersecurity tools
                             </div>
                         </div>
                         <div
@@ -997,69 +995,6 @@ function App() {
                                 <IconLabelButtons Variant="outlined" textTransform="none">
                                     SOQL
                                 </IconLabelButtons>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="diviser"></div>
-                    <span className="trainingTitle">Training</span>
-                    <div className="trainingExperience">
-                        <div className="trainingTextImageContainer">
-                            <div className="trainingExperienceContainer">
-                                <img src={tryhackmePicture} alt="TryhackmePicture" />
-                                <img
-                                    src={tryhackmeMobile}
-                                    alt="TryHackMeMobilePicture"
-                                    className="tryhackmeMobile"
-                                />
-                            </div>
-                            <div className="companyContainer">
-                                <span className="companyTitle">
-                                    TryHackMe Security Education
-                                </span>
-                                <span className="roleTitle">Self-taught</span>
-                            </div>
-                        </div>
-                        <div className="trainingExperienceExplanation">
-                            <div className="trainingExperienceText">
-                                <p>
-                                    My TryHackMe training provided extensive practical
-                                    cybersecurity experience through labs and CTF
-                                    challenges that covered port scanning, service
-                                    enumeration, and vulnerability analysis.
-                                </p>
-                                <p>
-                                    This training enhanced my understanding of system,
-                                    protocols and network vulnerabilities, improved my
-                                    problem-solving skills and my ability to document
-                                    findings effectively.
-                                </p>
-                                <p>
-                                    It prepared me for practical security assessments by
-                                    simulating real-world scenarios. Moreover, it favored
-                                    my adaptability in handling diverse security
-                                    challenges.
-                                </p>
-                            </div>
-                            <div className="projectIconContainer">
-                                <IconLabelButtons
-                                    Variant="outlined"
-                                    textTransform="none"
-                                    Color="white"
-                                >
-                                    Since October
-                                </IconLabelButtons>
-                                <a
-                                    href="https://tryhackme.com/r/p/nyu"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <IconLabelButtons
-                                        Variant="outlined"
-                                        textTransform="none"
-                                    >
-                                        Click to view TryHackMe profile
-                                    </IconLabelButtons>
-                                </a>
                             </div>
                         </div>
                     </div>
