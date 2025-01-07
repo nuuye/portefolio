@@ -147,8 +147,8 @@ function App() {
                         </div>
                         <div className="textContainer">
                             <span>Thomas Mostowfi</span>
-                            <span>Computer Science Engineering student</span>
-                            <span>23 years old</span>
+                            <span>Computer science engineer</span>
+                            <span>24 years old</span>
                         </div>
                         <div className="contactContainer">
                             <div className="temporaryDiv">
