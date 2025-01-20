@@ -28,6 +28,7 @@ import nmapPicture from '../src/images/nmap.png';
 import kaliLinuxPicture from '../src/images/kaliLinux.png';
 import hydraPicture from '../src/images/hydra.png';
 import projexMobile from '../src/images/projexMobile.png';
+import mongoDBPicture from '../src/images/mongodb.svg';
 
 import dominionMobile from '../src/images/dominionMobile.png';
 import obisMobile from '../src/images/obisMobile.gif';
@@ -240,10 +241,10 @@ function App() {
                             </p>
                             <p>
                                 I am now actively seeking new opportunities, with a strong
-                                interest in development and cybersecurity. My background in web
-                                development and recent experience in software development
-                                provide a solid foundation, and I'm eager to apply my
-                                skills to real world challenges.
+                                interest in development and cybersecurity. My background
+                                in web development and recent experience in software
+                                development provide a solid foundation, and I'm eager to
+                                apply my skills to real world challenges.
                             </p>
                             <p>
                                 If you have a role or project that aligns with my skills
@@ -789,6 +790,18 @@ function App() {
                             }}
                         >
                             <div className="iconContainer">
+                                <a
+                                    href="https://www.mongodb.com/fr-fr"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <img
+                                        src={mongoDBPicture}
+                                        alt="mongodb logo"
+                                        className="mongodbLogo"
+                                    />
+                                    <span>MongoDB</span>
+                                </a>
                                 <a
                                     href="https://www.postgresql.org/"
                                     target="_blank"
