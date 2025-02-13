@@ -310,7 +310,8 @@ body {
             border-radius: 5px;
             background-color: #323030;
         }
-        .secondProject {
+        .secondProject,
+        .fourthProject {
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -321,7 +322,8 @@ body {
                 padding-right: 40px;
             }
 
-            .secondProjectContainer {
+            .secondProjectContainer,
+            .fourthProjectContainer {
                 img {
                     border-radius: 6px;
                     width: 625px;
@@ -339,7 +341,7 @@ body {
                         display: none;
                     }
                 }
-                .dominionMobile {
+                .dominionMobile, .planyMobile {
                     border-radius: 6px;
                     @media (min-width: 600px) {
                         display: none;
@@ -357,14 +359,16 @@ body {
                     }
                 }
             }
-            .secondProjectSecondContainer {
+            .secondProjectSecondContainer,
+            .fourthProjectFourthContainer {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 @media (max-width: 1170px) {
                     align-items: center;
                 }
-                .secondProjectTextContainer {
+                .secondProjectTextContainer,
+                .fourthProjectTextContainer {
                     @extend .container-style;
                     background-color: #383939;
                     padding: 15px;

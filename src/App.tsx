@@ -29,6 +29,8 @@ import kaliLinuxPicture from '../src/images/kaliLinux.png';
 import hydraPicture from '../src/images/hydra.png';
 import projexMobile from '../src/images/projexMobile.png';
 import mongoDBPicture from '../src/images/mongodb.svg';
+import planyPreview from '../src/images/plany_preview.gif';
+import planyPreviewMobile from '../src/images/plany_preview_mobile.gif';
 
 import dominionMobile from '../src/images/dominionMobile.png';
 import obisMobile from '../src/images/obisMobile.gif';
@@ -556,6 +558,80 @@ function App() {
                                     Scene Builder
                                 </IconLabelButtons>
                             </div>
+                        </div>
+                    </div>
+                    <div className="diviser"></div>
+                    <div className="fourthProject">
+                        <div className="fourthProjectFourthContainer">
+                            <div className="fourthProjectTextContainer">
+                                <div>
+                                    <p>
+                                        Plany is a task management application designed to
+                                        help users efficiently organize their daily
+                                        activities.
+                                    </p>
+                                    <p>
+                                        Built with React for the frontend and Node.js with
+                                        Express for the backend, it features an intuitive
+                                        and responsive user interface powered by Chakra
+                                        UI.
+                                    </p>
+                                    <p>
+                                        Users can create, edit, and delete tasks while
+                                        tracking their progress. Data is securely stored
+                                        in a MongoDB database. Moreover passwords are
+                                        hashed with bcrypt and user authentification is
+                                        done using JWT.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="projectIconContainer">
+                                <a
+                                    href="https://github.com/nuuye/plany"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <IconContainer
+                                        background="#383939"
+                                        tooltip="See the code"
+                                    >
+                                        <GitHubIcon sx={{ color: '#2b86ff' }} />
+                                    </IconContainer>
+                                </a>
+                                <a
+                                    href="https://plany-blond.vercel.app/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <IconLabelButtons
+                                        Color="white"
+                                        Variant="outlined"
+                                        textTransform="none"
+                                    >
+                                        Website link
+                                    </IconLabelButtons>
+                                </a>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    React
+                                </IconLabelButtons>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    Node.js
+                                </IconLabelButtons>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    MongoDB
+                                </IconLabelButtons>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    Next.js
+                                </IconLabelButtons>
+                            </div>
+                        </div>
+                        <div className="fourthProjectContainer">
+                            <img src={planyPreview} alt="Plany Preview" />
+                            <img
+                                src={planyPreviewMobile}
+                                alt="Pany preview mobile"
+                                className="planyMobile"
+                            />
                         </div>
                     </div>
                 </div>
