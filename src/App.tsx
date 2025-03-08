@@ -260,7 +260,7 @@ function App() {
                                     <IconContainer background="#373743">
                                         <SchoolIcon color="primary" />
                                     </IconContainer>
-                                    <span>Education (Graduation in 2024)</span>
+                                    <span>Education (Graduated in 2024)</span>
                                 </div>
                                 <div className="listContainer">
                                     <List dense={true} sx={{ paddingTop: 0 }}>
