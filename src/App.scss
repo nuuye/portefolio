@@ -225,13 +225,15 @@ body {
             @extend .title-style;
         }
         .firstProject,
-        .thirdProject {
+        .thirdProject,
+        .fifthProject {
             display: flex;
             justify-content: flex-start;
             padding: 15px 120px 25px 120px;
 
             .firstProjectContainer,
-            .thirdProjectContainer {
+            .thirdProjectContainer,
+            .fifthProjectContainer {
                 margin: 0px 50px;
                 img {
                     border-radius: 6px;
@@ -275,19 +277,42 @@ body {
                     }
                 }
 
+                .fitlogsMobile {
+                    border-radius: 6px;
+                    @media (min-width: 730px) {
+                        display: none;
+                    }
+                    @media (max-width: 730px) {
+                        display: unset;
+                        height: 550px;
+                        width: auto;
+                    }
+                    @media (max-width: 400px) {
+                        height: 470px;
+                    }
+                    @media (max-width: 360px) {
+                        height: 440px;
+                    }
+                    @media (max-width: 330px) {
+                        height: 420px;
+                    }
+                }
+
                 .calculatorIMG {
                     width: 250px;
                     height: auto;
                 }
             }
             .firstProjectSecondContainer,
-            .thirdProjectSecondContainer {
+            .thirdProjectSecondContainer,
+            .fifthProjectSecondContainer {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 gap: 5px;
                 .firstProjectTextContainer,
-                .thirdProjectTextContainer {
+                .thirdProjectTextContainer,
+                .fifthProjectTextContainer {
                     padding: 15px;
                     @extend .container-style;
                     background-color: #383939;
@@ -341,20 +366,24 @@ body {
                         display: none;
                     }
                 }
-                .dominionMobile, .planyMobile {
+                .dominionMobile,
+                .planyMobile {
                     border-radius: 6px;
                     @media (min-width: 600px) {
                         display: none;
                     }
                     @media (max-width: 600px) {
                         display: unset;
-                        height: 700px;
+                        height: 650px;
                         width: auto;
                     }
-                    @media (max-width: 500px) {
+                    @media (max-width: 565px) {
+                        height: 600px;
+                    }
+                    @media (max-width: 525px) {
                         height: 550px;
                     }
-                    @media (max-width: 400px) {
+                    @media (max-width: 450px) {
                         height: 470px;
                     }
                 }
@@ -406,7 +435,8 @@ body {
                 align-items: center;
             }
         }
-        .thirdProject {
+        .thirdProject,
+        .fifthProject {
             padding: unset;
             padding: 50px;
             @media (max-width: 1250px) {
@@ -420,17 +450,26 @@ body {
             @media (max-width: 435px) {
                 padding: 15px;
             }
-            .thirdProjectContainer {
+            .thirdProjectContainer,
+            .fifthProjectContainer {
                 img {
                     @media (max-width: 730px) {
                         display: none;
                     }
                 }
             }
-            .thirdProjectSecondContainer {
+            .thirdProjectSecondContainer,
+            .fifthProjectSecondContainer {
                 @media (max-width: 1250px) {
                     align-items: center;
                 }
+            }
+        }
+        .fifthProject {
+            @media (max-width: 1335px) {
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
             }
         }
     }
@@ -531,15 +570,15 @@ body {
                         .cssLogo {
                             width: 60px;
                             height: auto;
-                            @media (max-width: 550px) {
+                            @media (max-width: 595px) {
                                 width: 30px;
                             }
                         }
                         .javaLogo {
                             width: 50px;
                             height: auto;
-                            @media (max-width: 550px) {
-                                width: 28px;
+                            @media (max-width: 595px) {
+                                width: 32px;
                             }
                         }
                         span {

@@ -31,6 +31,8 @@ import projexMobile from '../src/images/projexMobile.png';
 import mongoDBPicture from '../src/images/mongodb.svg';
 import planyPreview from '../src/images/plany_preview.gif';
 import planyPreviewMobile from '../src/images/plany_preview_mobile.gif';
+import fitlogs from '../src/images/Fitlogs.gif';
+import fitlogsMobile from '../src/images/Fitlogs_mobile.png';
 
 import dominionMobile from '../src/images/dominionMobile.png';
 import obisMobile from '../src/images/obisMobile.gif';
@@ -209,7 +211,7 @@ function App() {
                                         </div>
                                     </a>
                                     <a
-                                        href="https://www.google.it/maps/place/All.+Romain+Rolland,+Lille,+France/@50.6267358,3.1040364,17.78z/data=!4m6!3m5!1s0x47c2d60f49407d3b:0xd64549875962c68b!8m2!3d50.6267597!4d3.1052631!16s%2Fg%2F1v6qgsfq?entry=ttu"
+                                        href="https://www.google.it/maps/place/Hellemmes-Lille,+Lille/@50.6258822,3.0889245,14z/data=!3m1!4b1!4m6!3m5!1s0x47c2d60fdbd8e5f1:0xe8420a6c3e86c873!8m2!3d50.6312585!4d3.1114773!16s%2Fg%2F11_t9ycrq?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D"
                                         target="_blank"
                                         rel="noreferrer"
                                     >
@@ -632,6 +634,76 @@ function App() {
                                 alt="Pany preview mobile"
                                 className="planyMobile"
                             />
+                        </div>
+                    </div>
+                    <div className="diviser"></div>
+                    <div className="fifthProject">
+                        <div className="fifthProjectContainer">
+                            <img src={fitlogs} alt="fitlogsGIF" />
+                            <img
+                                src={fitlogsMobile}
+                                alt="fitlogsGIFMobile"
+                                className="fitlogsMobile"
+                            />
+                        </div>
+                        <div className="fifthProjectSecondContainer">
+                            <div className="fifthProjectTextContainer">
+                                <div>
+                                    <p>
+                                        FitLogs is a fitness logging application designed
+                                        to help users track their workouts and monitor
+                                        their progress over time.
+                                        <p>
+                                            The app allows users to log and manage their
+                                            exercise routines, including details like
+                                            sets, reps, and weights. All workout data is
+                                            securely stored in a MongoDB database, with
+                                            user authentication handled through JWT and
+                                            password hashing using bcrypt for added
+                                            security. In future updates, users will be
+                                            able to visualize their performance over time
+                                            through interactive charts.
+                                        </p>
+                                        <p style={{ fontWeight : 'bold' }}>
+                                            This is my current project and a work in
+                                            progress — both the design and functionalities
+                                            are still evolving and not final yet.
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="projectIconContainer">
+                                <a
+                                    href="https://github.com/nuuye/fitness-app-logger"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <IconContainer
+                                        background="#383939"
+                                        tooltip="See the code"
+                                    >
+                                        <GitHubIcon sx={{ color: '#2b86ff' }} />
+                                    </IconContainer>
+                                </a>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    React
+                                </IconLabelButtons>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    Node.js
+                                </IconLabelButtons>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    MongoDB
+                                </IconLabelButtons>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    Next.js
+                                </IconLabelButtons>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    Docker
+                                </IconLabelButtons>
+                                <IconLabelButtons Variant="outlined" textTransform="none">
+                                    MaterialUI
+                                </IconLabelButtons>
+                            </div>
                         </div>
                     </div>
                 </div>
