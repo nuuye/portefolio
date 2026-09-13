@@ -1,4 +1,5 @@
 import { Skill, SkillCategoryConfig } from '../types/skill.types';
+
 import cppPicture from '../images/c++.png';
 import javaPicture from '../images/java.png';
 import pythonPicture from '../images/python.png';
@@ -11,15 +12,22 @@ import reactPicture from '../images/react.png';
 import materialPicture from '../images/material.png';
 import antPicture from '../images/ant.png';
 import nodejsPicture from '../images/nodejs.png';
+import springBootPicture from '../images/spring-boot.svg';
 import postmanPicture from '../images/postman.png';
 import postgrePicture from '../images/postgre.png';
+import mongoDBPicture from '../images/mongodb.svg';
+import kafkaPicture from '../images/kafka.svg';
+import linuxPicture from '../images/cmd.png';
+import bashPicture from '../images/bash.png';
+import dockerPicture from '../images/docker.svg';
+import gitlabPicture from '../images/gitlab.png';
+import awsPicture from '../images/aws2.webp';
 import metasploitPicture from '../images/metasploit.png';
 import johnTheRipperPicture from '../images/johntheripper.png';
 import burpSuitePicture from '../images/burpsuite.png';
 import nmapPicture from '../images/nmap.png';
 import kaliLinuxPicture from '../images/kaliLinux.png';
 import hydraPicture from '../images/hydra.png';
-import mongoDBPicture from '../images/mongodb.svg';
 
 export const skills: Skill[] = [
     // Software Development
@@ -82,25 +90,30 @@ export const skills: Skill[] = [
         category: 'frontend',
     },
     {
-        name: 'Ant Design',
-        icon: antPicture,
-        link: 'https://ant.design/',
-        category: 'frontend',
-    },
-    {
         name: 'Material UI',
         icon: materialPicture,
         link: 'https://mui.com/',
         category: 'frontend',
     },
+    {
+        name: 'Ant Design',
+        icon: antPicture,
+        link: 'https://ant.design/',
+        category: 'frontend',
+    },
 
     // Backend
     {
-        name: 'MongoDB',
-        icon: mongoDBPicture,
-        link: 'https://www.mongodb.com/fr-fr',
+        name: 'Node.js',
+        icon: nodejsPicture,
+        link: 'https://nodejs.org/',
         category: 'backend',
-        className: 'mongodbLogo',
+    },
+    {
+        name: 'Spring Boot',
+        icon: springBootPicture,
+        link: 'https://spring.io/projects/spring-boot',
+        category: 'backend',
     },
     {
         name: 'PostgreSQL',
@@ -110,23 +123,62 @@ export const skills: Skill[] = [
         className: 'postgreLogo',
     },
     {
+        name: 'MongoDB',
+        icon: mongoDBPicture,
+        link: 'https://www.mongodb.com/',
+        category: 'backend',
+        className: 'mongodbLogo',
+    },
+    {
+        name: 'Kafka',
+        icon: kafkaPicture,
+        link: 'https://kafka.apache.org/',
+        category: 'backend',
+    },
+    {
         name: 'Postman',
         icon: postmanPicture,
         link: 'https://www.postman.com/',
         category: 'backend',
     },
+
+    // DevOps & Cloud
     {
-        name: 'NodeJS',
-        icon: nodejsPicture,
-        link: 'https://en.wikipedia.org/wiki/Node.js',
-        category: 'backend',
+        name: 'Linux Commands',
+        icon: linuxPicture,
+        link: 'https://www.gnu.org/software/coreutils/manual/coreutils.html',
+        category: 'devops',
+    },
+    {
+        name: 'Bash scripting',
+        icon: bashPicture,
+        link: 'https://www.gnu.org/software/bash/manual/bash.html',
+        category: 'devops',
+    },
+    {
+        name: 'Docker',
+        icon: dockerPicture,
+        link: 'https://www.docker.com/',
+        category: 'devops',
+    },
+    {
+        name: 'GitLab CI/CD',
+        icon: gitlabPicture,
+        link: 'https://docs.gitlab.com/ci/',
+        category: 'devops',
+    },
+    {
+        name: 'AWS',
+        icon: awsPicture,
+        link: 'https://aws.amazon.com/',
+        category: 'devops',
     },
 
     // Security
     {
-        name: 'Metasploit',
-        icon: metasploitPicture,
-        link: 'https://www.metasploit.com/',
+        name: 'Kali Linux',
+        icon: kaliLinuxPicture,
+        link: 'https://www.kali.org/',
         category: 'security',
     },
     {
@@ -138,13 +190,13 @@ export const skills: Skill[] = [
     {
         name: 'Burp Suite',
         icon: burpSuitePicture,
-        link: 'https://portswigger.net/burp/documentation/desktop/getting-started',
+        link: 'https://portswigger.net/burp',
         category: 'security',
     },
     {
-        name: 'Kali Linux',
-        icon: kaliLinuxPicture,
-        link: 'https://www.kali.org/',
+        name: 'Metasploit',
+        icon: metasploitPicture,
+        link: 'https://www.metasploit.com/',
         category: 'security',
     },
     {
@@ -178,8 +230,13 @@ export const skillCategories: SkillCategoryConfig[] = [
         displayIndex: '2',
     },
     {
-        id: 'security',
-        label: 'Cybersecurity tools',
+        id: 'devops',
+        label: 'DevOps & Cloud',
         displayIndex: '3',
+    },
+    {
+        id: 'security',
+        label: 'Cybersecurity Tools',
+        displayIndex: '4',
     },
 ];

@@ -1,4 +1,4 @@
-export type SkillCategory = 'software' | 'frontend' | 'backend' | 'security';
+export type SkillCategory = 'software' | 'frontend' | 'backend' | 'security' | 'devops';
 
 export interface Skill {
     name: string;
